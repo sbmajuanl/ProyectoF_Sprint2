@@ -7,7 +7,7 @@ window.addEventListener('load',function() {
 		var apellido=document.getElementById("apellido").value;
 		var correo=document.getElementById("correo").value;
 		var contrasena=document.getElementById("contrasena").value;
-  
+
     function enviardatos(nombre,apellido,correo,contrasena){
 			this.nombre=nombre;
 			this.apellido=apellido;
@@ -49,14 +49,12 @@ window.addEventListener('load',function() {
 			}
 	});
 });
-/*
-if(!(regemail.test(correo))) {
-    alert("No es un correo válido");
-}
-else (contrasena>=6 || contrasena<=20) {
-  alert("Contraseña debe ser de 6 hasta 20");
-}
-*/
+/*var regemail=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+function validarEmail(regemail) {
+if(!(regemail.test(correo))
+  alert("Error: La dirección de correo es incorrecta.");
+}*/
 
 var soloLetras=function(e){
   var codigoTecla=e.keyCode;//document.write(codigoTecla);
@@ -68,17 +66,6 @@ var soloLetras=function(e){
 }
 nombre.onkeypress=soloLetras;
 apellido.onkeypress=soloLetras;
-/*
-var sCorreo=function(g){
-  var codigoTecla=g.keyCode;
-  if((codigoTecla>=97 && codigoTecla<=122) || (codigoTecla==64) || (codigoTecla==46) || (codigoTecla==95)){
-    return true;
-  }else{
-    return false;
-  }
-}
-correo.onkeypress=sCorreo;
-*/
 
 var input=document.getElementsByClassName("input-registro");//console.log(input);
 var validacionInput=function(){
