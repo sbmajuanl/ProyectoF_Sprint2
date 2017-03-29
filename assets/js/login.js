@@ -22,7 +22,7 @@ window.addEventListener("load", function () {
 
       if(correo != "" && contrasena != "" && /([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})/gi.test(correo)){
         if (verificarUsuario(correo,contrasena)) {
-          window.location = "coder.html";*
+          window.location = "coder.html";
         }
       }
 
