@@ -49,12 +49,6 @@ window.addEventListener('load',function() {
 			}
 	});
 });
-/*var regemail=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-
-function validarEmail(regemail) {
-if(!(regemail.test(correo))
-  alert("Error: La dirección de correo es incorrecta.");
-}*/
 
 var soloLetras=function(e){
   var codigoTecla=e.keyCode;//document.write(codigoTecla);
@@ -66,6 +60,13 @@ var soloLetras=function(e){
 }
 nombre.onkeypress=soloLetras;
 apellido.onkeypress=soloLetras;
+/*
+function em(){
+var regemail=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+if(!(regemail.test(correo)){
+  alert("Error: La dirección de correo es incorrecta.");
+}
+}*/
 
 var input=document.getElementsByClassName("input-registro");//console.log(input);
 var validacionInput=function(){
